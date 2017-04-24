@@ -207,9 +207,8 @@ a:hover{
 
 .about-wrapper{
   /*width: 80%;
- 
   margin: auto;*/
-   height: 850px;
+ /*  height: 850px;*/
    background-color: #1C3DE6;
    background: url(../img/wood-plant.jpg) center center no-repeat;
    background-size: cover;
@@ -229,36 +228,137 @@ a:hover{
   clear: right;
 }*/
 
+/*ABOUT SECTION*/
+
+.about-wrapper{
+   background-color: #1C3DE6;
+   background: url(../img/wood-plant.jpg) center center no-repeat;
+   background-size: cover;
+   padding: 60px;
+   font-size: 22px;
+}
+
+.about-h1{
+  color: black;
+  background-color: white;
+  opacity: .8;
+  font-weight: 600;
+  padding: 3px;
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid black;
+}
+
 .info-wrapper{
-  margin:0 auto;
-  height: 90%;
-  width: 90%;
+ /* margin:0 auto;*/
+  /*height: 90%;*/
   background-color: white;
   opacity: .8;
   color: black;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: stretch;
+  border-bottom: 1px solid black;
 }
 
-#facts{
-  width: 50%;
+.content-type{
+  flex: 1 1 50%;
+}
+
+#personal{
+padding-bottom: 10px;
+
 
 }
 
-#skills{
-  width: 50%;
+#professional{
+  padding-bottom: 10px;
   border-left: solid black 1px;
 }
 
-.info-wrapper ul{
-  list-style-type: none;
+.ul-content{
+  list-style-type: square;
   text-align: left;
+  flex: 1 1 80%;
+  margin-bottom: 0px;
 }
+
+.about-columns{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.about-column-heading{
+  font-size:26px;
+  border-bottom: solid 1px black;
+  margin-top: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+ .about-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: dashed 1px black;
+}
+
+.interests-columns{
+  border-bottom: none;
+  padding-top: 10px;
+}
+
+
+
+
+.div-icon{
+  font-size: 46px;
+  align-self: center;
+  flex: 1 1 20%;
+}
+
+.about-wrapper p{
+  margin: 0;
+  padding: 10px;
+}
+
 
 .about-wrapper{
 
   color: white;
   text-align: center;
   clear: both;
+}
+
+.mission{
+  color: black;
+  background-color: white;
+  opacity: .8;
+  font-weight: 600;
+  padding: 3px;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 735px){
+
+  .about-wrapper{
+    padding: 15px;
+  }
+  .info-wrapper{
+    flex-flow: column wrap;
+  }
+
+  #personal{
+    width: 100%;
+  }
+  #professional{
+    width: 100%;
+    border-top:1px solid black;
+    border-left: none;
+  }
+
+  @media(max-width: 335px){
+    .about-wrapper{
+      padding:0;
+    }
+  }
 }
